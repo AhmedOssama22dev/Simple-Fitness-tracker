@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Simple Fitness Tracker/sample/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simple Fitness Tracker/sample/Main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Simple Fitness Tracker/sample/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simple Fitness Tracker/sample/Main$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Simple Fitness Tracker/sample/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simple Fitness Tracker/sample/Main$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Simple Fitness Tracker/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simple Fitness Tracker/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,8 +71,13 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1Z4qzo7X6VjigaxyNFFg6304nTj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -188,26 +201,34 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Notifications" timestamp="1584744004360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1584744004360" />
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1584309415763">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584309415763" />
-    <state width="1322" height="163" key="GridCell.Tab.0.bottom" timestamp="1584580840799">
+    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1584744051806">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584580840799" />
-    <state width="1322" height="163" key="GridCell.Tab.0.center" timestamp="1584580840799">
+    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584744051806" />
+    <state width="1322" height="163" key="GridCell.Tab.0.bottom" timestamp="1584721637469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584580840799" />
-    <state width="1322" height="163" key="GridCell.Tab.0.left" timestamp="1584580840799">
+    <state width="1322" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584721637469" />
+    <state width="1322" height="163" key="GridCell.Tab.0.center" timestamp="1584721637469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584580840799" />
-    <state width="1322" height="163" key="GridCell.Tab.0.right" timestamp="1584580840799">
+    <state width="1322" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584721637469" />
+    <state width="1322" height="163" key="GridCell.Tab.0.left" timestamp="1584721637469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584580840799" />
+    <state width="1322" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584721637469" />
+    <state width="1322" height="163" key="GridCell.Tab.0.right" timestamp="1584721637469">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584721637469" />
     <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1584510434385">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -228,10 +249,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584113058367" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1584646765020">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1584744715039">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584646765020" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584744715039" />
+    <state x="492" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584743665498">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584743665498" />
     <state x="65" y="64" key="new project wizard" timestamp="1584116056523">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

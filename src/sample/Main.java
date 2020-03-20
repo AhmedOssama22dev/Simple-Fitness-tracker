@@ -16,10 +16,7 @@ import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
@@ -44,7 +41,6 @@ public class Main<arr1> extends Application {
     private  Label thirdPlace = new Label("");
     private  Label fourthPlace = new Label("");
 
-    private  Label errorLabel = new Label("Error");
 
     private String list[] = {"Swimming", "Running", "Kick boxing", "Strength training"};
     private ChoiceBox activity = new ChoiceBox(FXCollections.observableArrayList(list));
@@ -60,6 +56,9 @@ public class Main<arr1> extends Application {
     private NumberAxis yAxis = new NumberAxis();
     private BarChart barChart = new BarChart(xAxis,yAxis);
     private XYChart.Series dataSeries1 = new XYChart.Series();
+
+    private  TitledPane r = new TitledPane();
+    private Alert alert = new Alert(Alert.AlertType.NONE);
     Functions fun = new Functions();
 
     float swimmingCalories, runningCalories, kickBoxingCalories, strengthCalories,totalCaloriesPar,totalCalories=0;
@@ -141,10 +140,6 @@ public class Main<arr1> extends Application {
             primaryStage.show();
             Stage stage2 = new Stage();
             stage2.setScene(new Scene(myGrid2,850,600));
-            //For error message
-             StackPane errorPane = new StackPane();
-             Stage errorStage = new Stage();
-             errorStage.setScene(new Scene(errorPane,250,150));
 
         stage2.setTitle("Fitness Tracker");
 
@@ -165,21 +160,38 @@ public class Main<arr1> extends Application {
             addRecord.setOnMouseClicked(new EventHandler<MouseEvent>() {
                 @Override
                 public void handle(MouseEvent event) {
-                    try{
-                    sort.setDisable(false);
-                  time =Integer.parseInt(timeField.getText());
-                  //Calc total calories
-                  totalCalories +=  fun.choiceDependentCaloriesCalculations(choice,time,swimmingCalories,runningCalories,kickBoxingCalories,strengthCalories,totalCaloriesPar);
-                    calories.setText("Total Calories burnt = "+Math.round(totalCalories)+" cal");
+                    try {
+                        if (!(activity.getValue() == null)){
+                            sort.setDisable(false);
+                        time = Integer.parseInt(timeField.getText());
+                        //Calc total calories
+                        totalCalories += fun.choiceDependentCaloriesCalculations(choice, time, swimmingCalories, runningCalories, kickBoxingCalories, strengthCalories, totalCaloriesPar);
+                        calories.setText("Total Calories burnt = " + Math.round(totalCalories) + " cal");
 
-                    //Calc total heart rate
-                   heartRate= fun.choiceDependentHeartCalculations(choice,time);
-                   heartRateLabel.setText("Total heart rate = "+heartRate+"beat/min");}
+                        //Calc total heart rate
+                        heartRate = fun.choiceDependentHeartCalculations(choice, time);
+                        heartRateLabel.setText("Total heart rate = " + heartRate + "beat/min");
+                        alert.setAlertType(Alert.AlertType.INFORMATION);
+                        alert.setTitle("Activity Added");
+                        alert.setContentText("Activity successfully added.");
+                        alert.show();
+                    }
+                        else
+                        {
+                            alert.setAlertType(Alert.AlertType.ERROR);
+                            alert.setTitle("Error");
+                            alert.setContentText("Please make a choice :D");
+                            alert.show();
+                        }
+                    }
+
                     catch (Exception e)
                     {
-                        errorLabel.setText("Please enter only integer minutes or\nFill the field :D");
-                        errorPane.getChildren().add(errorLabel);
-                        errorStage.show();
+                        alert.setAlertType(Alert.AlertType.ERROR);
+                        alert.setTitle("Error");
+                        alert.setContentText("Please enter only integer minutes or\nFill the field :D");
+                        alert.show();
+
                     }
 
                 }
